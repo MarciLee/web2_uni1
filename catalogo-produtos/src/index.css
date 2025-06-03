@@ -1,0 +1,68 @@
+/* src/index.css */
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif; /* Fonte padrão para o corpo */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f4; /* Um fundo suave para a página */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Estilos W3.CSS customizados e auxiliares */
+.w3-sidebar a {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Esta regra já está no App.css, mas pode ser global também */
+body, h1, h2, h3, h4, h5, h6, .w3-wide {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Mensagens de status para carregamento e erro (exemplo do ProductList) */
+.status-message {
+  text-align: center;
+  font-size: 1.2em;
+  padding: 20px;
+  color: #555;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  background-color: #ffe0e0;
+  border: 1px solid red;
+  border-radius: 4px;
+}
+
+/* src/App.css */
+.app-content {
+  max-width: 1200px;
+  margin: 0 auto; /* Centraliza o conteúdo principal */
+  position: relative; /* Para o overlay funcionar corretamente em relação a este container */
+}
+
+/* Ajuste para o w3-main quando a sidebar está ativa em telas maiores */
+.w3-main-shifted {
+  margin-left: 250px !important;
+  transition: margin-left 0.4s ease;
+}
+
+.w3-main-normal {
+  margin-left: 0px !important;
+  transition: margin-left 0.4s ease;
+}
+
+/* Efeito de overlay para o sidebar em telas pequenas */
+.app-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2; /* Abaixo da sidebar, mas acima do conteúdo */
+}
