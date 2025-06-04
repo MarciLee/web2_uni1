@@ -1,0 +1,57 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  height: 100%;
+  width: 250px;
+  background-color: #111;
+  color: #fff;
+  padding: 1rem;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.aberto {
+  left: 0;
+}
+
+.hamburguer {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.closeBtn {
+  background: none;
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 3rem;
+}
+
+.sidebar li {
+  margin: 1rem 0;
+}
+
+.sidebar a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.sidebar a:hover {
+  color: #00e6e6;
+}
